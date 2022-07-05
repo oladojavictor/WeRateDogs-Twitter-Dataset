@@ -15,12 +15,7 @@ auth.set_access_token(access_token, access_secret)
 
 api = tweepy.API(auth, wait_on_rate_limit=True)
 
-# NOTE TO STUDENT WITH MOBILE VERIFICATION ISSUES:
-# df_1 is a DataFrame with the twitter_archive_enhanced.csv file. You may have to
-# change line 17 to match the name of your DataFrame with twitter_archive_enhanced.csv
-# NOTE TO REVIEWER: this student had mobile verification issues so the following
-# Twitter API code was sent to this student from a Udacity instructor
-# Tweet IDs for which to gather additional data via Twitter's API
+
 tweet_ids = df_1.tweet_id.values
 len(tweet_ids)
 
